@@ -13,7 +13,6 @@ body {
     justify-content: space-between;
     background-color: transparent;
     color: floralwhite;
-    padding-left: 1.4rem;
     padding-right: 1.4rem;
     height: 4rem;
     align-items: center;
@@ -41,6 +40,13 @@ body {
 }
 
 /* Home content */
+
+.pg-title {
+    margin-top: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+
 
 .b-preview {
     padding: .8rem .4rem;

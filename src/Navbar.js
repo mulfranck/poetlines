@@ -3,7 +3,7 @@ const Navbar = () => {
 
     return (
         <header className="header">
-            <h2>multra</h2>
+            <h1>multra</h1>
 
             <nav className="nav-bar">
                 <ul>
