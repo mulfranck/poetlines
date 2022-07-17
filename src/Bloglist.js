@@ -1,8 +1,8 @@
 
 const Bloglist = (props) => {
-  const handlecant = () => {
-    alert("Sorry! Can't delete this.");
-  }
+  // const handlecant = () => {
+  //   alert("Sorry! Can't delete this.");
+  // }
 
   return (
     <div className="b-list">
@@ -14,7 +14,7 @@ const Bloglist = (props) => {
             <p className="b-details">Written by <span className="b-author">{blog.author}</span></p>
             <div className="b-foote">
               <button className="edit">Edit</button>
-              <button className="delete" onClick={() => (Object.hasOwn(props, 'handleDelete') ? props.handleDelete(blog.id) : handlecant())}>Delete</button>
+              <button className="delete">Delete</button>
             </div>
           </div>
         ))
