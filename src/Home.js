@@ -9,10 +9,15 @@ const Home = () => {
     {title: 'How to safely uninstall "Oh my zsh"', body:"", author:"mulfranck", id:3},
   ])
   
+  const handleDelete = (id) => {
+    const newBlogs = blogs.filter(blog => (blog.id !== id))
+    setBlogs(newBlogs)
+    return 1
+  }
   
   return (
     <div className="home">
-      <Bloglist blogs={blogs} title={"All blogs"}/>
+      <Bloglist blogs={blogs} title={"All blogs"} handleDelete={handleDelete}/>
       <Bloglist blogs={blogs.filter(blog => blog.author === 'mulfranck')} title={"@mulfranck's blogs"}/>
     </div>
   )
