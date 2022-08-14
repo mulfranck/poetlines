@@ -1,0 +1,17 @@
+@import url("./../utils/var.css");
+
+.hero-full {
+  height: calc(100vh - 78px);
+  background-color: var(--grey);
+  padding: 1rem;
+}
+
+.today-poem {
+  border-top: .2rem solid var(--primary);
+}
+.today-tag {
+  background-color: var(--primary);
+  left: -1rem;
+}
+.read-more { background-color: var(--primary);}
+.read-more:hover { background-color: var(--primary-dark);}

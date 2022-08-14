@@ -1,0 +1,12 @@
+:root {
+  --primary: #00B4F0;
+  --primary-dark: #00608D;
+  --primary-lightest: #59D6FF;
+
+  /* --grey: #212B36; */
+  --grey: #1b1f22f3;
+  --greys-lightest: #343434;
+  
+
+  --serif: 'Lora', serif;
+}
