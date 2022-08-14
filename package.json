@@ -1,7 +1,7 @@
 {
-  "name": "multra",
+  "name": "poetlines",
   "version": "0.1.0",
-  "homepage": "https://mulfranck.github.io/multra/",
+  "homepage": "https://mulfranck.github.io/poetlines/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
