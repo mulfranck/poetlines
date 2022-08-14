@@ -33,5 +33,5 @@ useEffect( () => {
 Thus, this would be fired when the page first renders, and whenever the `name` state changes.
 
 #### 2. json-server
-```npm -i --location=global json-server```
-```npm json-server --watch data/db.json --port 9000```
+```npm i --location=global json-server```
+```npx json-server --watch data/db.json --port 9000```
