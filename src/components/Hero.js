@@ -11,9 +11,9 @@ const Hero = (e) => {
           <article className="container h-75">
             <div className="row mt-4 h-100">
               <div className="col-md-2 position-relative">
-                <p className='px-1 py-2 position-absolute w-100  today-tag' > Poem of the Day</p>
+                <p className='px-1 py-2 position-absolute w-100 text-center today-tag' > Poem today</p>
               </div>
-              <div className="col">
+              <div className="col gx-5">
                 <h2 className="h3"> Title </h2>
                 <main className='lead h-100'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatum? Maiores odit illum, repellendus asperiores ducimus alias!

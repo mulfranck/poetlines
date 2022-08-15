@@ -8,5 +8,6 @@
   --greys-lightest: #343434;
   
 
-  --serif: 'Lora', serif;
+  --text-serif: 'Lora', serif;
+  --text-sans: 'Source Sans Pro', sans-serif;
 }

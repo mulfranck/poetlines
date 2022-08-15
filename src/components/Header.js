@@ -2,7 +2,7 @@ const Header = () => {
     return (
         <header className="navbar navbar-expand-md navbar-dark bg-dark">
             <nav className="container">
-                <a className="navbar-brand" href="#">Poetline</a>
+                <h1 className="navbar-brand" href="#">Poetline</h1>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapseContent" aria-controls="navbarCollapseContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

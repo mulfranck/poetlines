@@ -9,9 +9,18 @@
 .today-poem {
   border-top: .2rem solid var(--primary);
 }
+.h3 {
+  font-family: var(--text-serif);
+  font-weight: 300;
+  font-style: italic;
+}
+
 .today-tag {
   background-color: var(--primary);
   left: -1rem;
+  font-size: medium;
+  font-weight: bold;
+  font-family: var(--text-sans);
 }
 .read-more { background-color: var(--primary);}
 .read-more:hover { background-color: var(--primary-dark);}
