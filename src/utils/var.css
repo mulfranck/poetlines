@@ -4,10 +4,12 @@
   --primary-lightest: #59D6FF;
 
   /* --grey: #212B36; */
-  --grey: #1b1f22f3;
+  --bg-dark-light: #282828f9;
   --greys-lightest: #343434;
   
 
   --text-serif: 'Lora', serif;
   --text-sans: 'Source Sans Pro', sans-serif;
+
+  --ps: 1.25rem;
 }

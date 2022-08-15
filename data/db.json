@@ -106,7 +106,7 @@
       ],
       "author":"William Cho",
       "category": "love, sadness",
-      "lineCount": 35,
+      "linecount": 35,
       "id":4
     },
     {
@@ -153,7 +153,7 @@
         "Architecto error tenetur unde",
         "voluptate laborum magnam"
       ],
-      "lineCount": 18,
+      "linecount": 18,
       "category": "programming",
       "author":"mulfranck", 
       "id":6
@@ -201,7 +201,7 @@
         "Architecto error tenetur unde",
         "voluptate laborum magnam"
       ],
-      "lineCount": 12,
+      "linecount": 12,
       "category": "love",
       "author":"Abella frais", 
       "id":8
@@ -221,7 +221,7 @@
         "Architecto error tenetur unde",
         "voluptate laborum magnam"
       ],
-      "lineCount": 10,
+      "linecount": 10,
       "category": "struggle",
       "author":"William Cho", 
       "id":9
@@ -237,10 +237,59 @@
         "Architecto error tenetur unde",
         "voluptate laborum magnam"
       ],
-      "lineCount": 7,
+      "linecount": 7,
       "category": "lust",
       "author": "Nigga Gina", 
       "id": 10
+    }, 
+    {
+      "title": "Sun to Void",
+      "lines": [
+        "I cannot help my gaze",
+        "and did not choose this.",
+        "I was a flurry of atoms.",
+        "I was a disassembled spark.",
+        "I desired impression.",
+        "I desired progeny.",
+        "Then the Lord said unto me:",
+        "Suppose a daughter.",
+        "Does it please you?",
+        "Immensely. Immeasurably.",
+        "But I was not myself a daughter,",
+        "could be no mother of one or three.",
+        "So I was given all daughters.",
+        "All blooms, all fruits.",
+        "At first, I was a lamp",
+        "craned above a clovered garden.",
+        "The roots, they suckled the dirt,",
+        "and lashed it, and crawled for eons.",
+        "Then they were standing upright",
+        "all over the earth.",
+        "My gaze horizoned.",
+        "My origination fogged.",
+        "My eyes searched forever,",
+        "my gaze compassing.",
+        "I asked God to turn me a way,",
+        "give me eyelids, give me veil.",
+        "Give me some cover, like every other.",
+        "God, please. Please ease me, God",
+        "until God grew weary of my weary",
+        "and fixed for me an axis.",
+        "God said: Wait. Repeated: Wait.",
+        "I gave you daughters on daughters.",
+        "Are you not pleased?",
+        "I do not know pleasure.",
+        "I know not what I become.",
+        "God said: Your touch",
+        "is incomprehensible.",
+        "Now you know Me.",
+        "No fathom between us.",
+        "All men turn their faces to you,",
+        "but verily, they turn a way."
+      ],
+      "author": "Ladan Osman",
+      "linecount":41,
+      "id": 11
     }
   ]
 }

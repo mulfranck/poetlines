@@ -12,7 +12,7 @@ const Header = () => {
                     <form className="d-flex mx-auto" role="search">
                         <div className="input-group">
                             <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">Search</button>
+                            <button className="btn btn-outline-primary text-light" type="submit"><span className="bi bi-search"></span></button>
                         </div>
                     </form>
                     <ul className="navbar-nav py-2">

@@ -1,13 +1,11 @@
 @import url("./../utils/var.css");
 
-.hero-full {
-  height: calc(100vh - 78px);
-  background-color: var(--grey);
-  padding: 1rem;
-}
+
 
 .today-poem {
   border-top: .2rem solid var(--primary);
+  /* max-height: 680px; */
+  max-height: 42.5rem;
 }
 .h3 {
   font-family: var(--text-serif);
@@ -15,12 +13,29 @@
   font-style: italic;
 }
 
+.full-page {
+  height: 85%;
+}
+
+.faded-text {
+  background: linear-gradient(rgba(255, 250, 240, 0.253), floralwhite );
+}
+
 .today-tag {
   background-color: var(--primary);
-  left: -1rem;
-  font-size: medium;
   font-weight: bold;
+  left: -0.4rem;
   font-family: var(--text-sans);
 }
-.read-more { background-color: var(--primary);}
+.read-more { 
+  background-color: var(--primary);
+  font-family: var(--text-sans);
+  font-weight: bold;
+}
 .read-more:hover { background-color: var(--primary-dark);}
+
+.lorem-img {
+  width: 311px;
+  height: 314px;
+  background-color: rgb(78, 74, 74);
+}
