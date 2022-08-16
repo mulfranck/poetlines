@@ -4,8 +4,8 @@ import PoemList from "./components/PoemList";
 
 function App() {
   return (
-    <div className="bg-light">
-      <section className="container-fluid bg-dark-light">
+    <div className="bg-light p-0">
+      <section className="container-fluid bg-dark-light p-0">
         <Header />
         <Hero  />
       </section>
