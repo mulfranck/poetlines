@@ -29,13 +29,7 @@
    column-gap: 4.1rem;
 }
 
-/* @media (min-width: 576px) {
-  .card-columns {
-    -webkit-column-count: 3;
-    column-count: 3;
-    -webkit-column-gap: 1.25rem;
-    column-gap: 1.25rem;
-    orphans: 1;
-    widows: 1;
-  }
-} */
+.line {
+  display: flex;
+  flex-direction: column;
+}
