@@ -1,0 +1,41 @@
+@import url(./../utils/var.css);
+
+.card-columns .card {
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+}
+.card::after {
+  content: "";
+  /* width: 101%; */
+
+  position: absolute;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+
+  border-bottom-right-radius: .4rem;
+  border-bottom-left-radius: .4rem;
+  border-bottom: .2rem solid var(--primary);
+}
+.card-text {
+  max-height: 148px;
+  overflow: hidden;
+
+}
+.card-columns {
+  column-count: 2;
+  orphans: 2;
+  padding: 0 5rem;
+   column-gap: 4.1rem;
+}
+
+/* @media (min-width: 576px) {
+  .card-columns {
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+  }
+} */
