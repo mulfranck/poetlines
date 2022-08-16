@@ -4,8 +4,7 @@
 
 .today-poem {
   border-top: .2rem solid var(--primary);
-  /* max-height: 680px; */
-  max-height: 42.5rem;
+  max-height: 41.24rem;
 }
 .h3 {
   font-family: var(--text-serif);
