@@ -17,7 +17,7 @@
 }
 
 .faded-text {
-  background: linear-gradient(rgba(255, 250, 240, 0.253), floralwhite );
+  background: linear-gradient(rgba(248, 249, 250, 0.473), rgba(248, 249, 250, 0.884), #F8F9FA );
 }
 
 .today-tag {

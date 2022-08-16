@@ -16,10 +16,21 @@
 }
 
 .para {
-    font-family: var(--text-serif);
     opacity: 88%;
-
 }
 .bg-dark-light {
     background-color: var(--bg-dark-light);
+}
+
+.text-serif {
+    font-family: var(--text-serif);
+}
+
+.text-20 {
+    font-size: var(--ps);
+    font-family: var(--text-serif);
+}
+
+.text-bold {
+    font-weight: bold;
 }

@@ -23,7 +23,7 @@ const Hero = (e) => {
               <div className="call-to-action-text mt-md-4 ">
                 <p className=' text-light mb-0'>Sign up for daily poem</p>
 
-                <p className='mb-md-0 text-light para'>recieve a poem in your email directly</p>
+                <p className='mb-md-0 text-light para text-serif'>recieve a poem in your email directly</p>
               </div>
 
               <div className="container ps-0 mt-md-3">
@@ -47,7 +47,7 @@ const Hero = (e) => {
             <article className="col-md-8 h-100 d-flex flex-column justify-content-between">
               <h2 className="h3 mt-3"> Title </h2>
               <main className="col position-relative overflow-hidden">
-                <div className='para fs-5'>
+                <div className='para fs-5 text-serif mt-4'>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatum? Maiores odit illum, repellendus asperiores ducimus alias!</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatum? Maiores odit illum, repellendus asperiores ducimus alias!</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatum? Maiores odit illum, repellendus asperiores ducimus alias!</p>
