@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import PoemList from "./components/PoemList";
+import PoetList from "./components/PoetList";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       </section>
 
       <PoemList />
+      <PoetList />
 
       <section className="container">
         <div className="row py-5"></div>
