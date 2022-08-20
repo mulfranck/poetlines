@@ -101,6 +101,7 @@ const PoemList = () => {
           <PoemCard poem={POEMS[3]} />
         </div>
     </div>
+    <div className="just-for-space d-none d-md-block py-4"></div>
     </section>
   )
 }
