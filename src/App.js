@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import PoemList from "./components/PoemList";
@@ -13,25 +14,8 @@ function App() {
 
       <PoemList />
       <PoetList />
-
-      <section className="container">
-        <div className="row py-5"></div>
-      </section>
-      <section className="container">
-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, sit cumque ipsam obcaecati earum labore iusto voluptatem deserunt veritatis dolore nobis non magnam molestias esse? Voluptate quas a itaque ratione?
-      </section>
-      <section className="container">
-        <div className="row py-5"></div>
-      </section>
-      <section className="container"></section>
-      <section className="container">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, sit cumque ipsam obcaecati earum labore iusto voluptatem deserunt veritatis dolore nobis non magnam molestias esse? Voluptate quas a itaque ratione?
-      </section>
-      <section className="container">
-        <div className="row py-5"></div>
-      </section>
-      <section className="container"></section>
+      
+      <Footer />
     </div>
   );
 }
