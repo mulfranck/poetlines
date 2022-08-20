@@ -21,7 +21,7 @@ const PoetList = (props) => {
         <div className=" d-flex justify-content-evenly">
           <h3 className="h3 text-serif fs-1 fst-italic container ms-auto">Poets</h3>
           <p className="">
-            <a href="/peots" className='link-dark d-flex align-items-center fs-3 text-medium text-sans para'>Noba&nbsp;of&nbsp;poets <i className="bi bi-chevron-right text-dark fs-2" ></i></a>
+            <a href="/peots" className='link-dark d-flex align-items-center'><span className="fs-4 text-sans para pb-2">Noba&nbsp;of&nbsp;poets</span> <i className="bi bi-chevron-right text-dark fs-2" ></i></a>
           </p>
         </div>
       </header>
