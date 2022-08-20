@@ -16,24 +16,24 @@ const Footer = props => {
             <form className="main">
               <div className="form-check mt-3">
                 <input className="form-check-input" type="checkbox" value="" id="teach-id" required aria-required/>
-                  <label className="form-check-label font-sans opacity-75" for="teach-it">
+                  <label className="form-check-label font-sans opacity-75" htmlFor="teach-it">
                     Teach This Poem
                   </label>
               </div>
               <div className="form-check my-3">
                 <input className="form-check-input" type="checkbox" value="" id="daily-poem" required aria-required/>
-                  <label className="form-check-label font-sans opacity-75" for="daily-poem">
+                  <label className="form-check-label font-sans opacity-75" htmlFor="daily-poem">
                     Daily Poem
                   </label>
               </div>
               <div className="form-check">
                 <input className="form-check-input" type="checkbox" value="" id="audio-poem" required aria-required/>
-                  <label className="form-check-label font-sans opacity-75" for="audio-poem">
+                  <label className="form-check-label font-sans opacity-75" htmlFor="audio-poem">
                     Audio Poem
                   </label>
               </div>
               <div className="input-group w-75 h-25 mt-3">
-                <input type="email" class="form-control" placeholder="user@email.com" aria-label="Your email" aria-describedby="button-addon2"/>
+                <input type="email" className="form-control" placeholder="user@email.com" aria-label="Your email" aria-describedby="button-addon2"/>
                   <button className="btn btn-outline-secondary" type="submit" id="button-addon2">submit</button>
               </div>
             </form>
