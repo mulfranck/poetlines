@@ -1,13 +1,16 @@
+import { CreateArrayNode } from '../utils/CreateArrayNode';
 import './Hero.css';
 
-const Hero = (e) => {
+const Hero = (props) => {
+  const { title, lines, author } = (props.todayPoem[0])
+
   return (
     <section className="container">
       <div className='row py-4 d-none d-md-block'></div>
 
       <article className="row d-flex flex-wrap flex-md-nowrap">
         <aside className="col-md-4 col-sm-12 pe-0">
-          <h3 className="h3 p-3 d-none d-md-flex flex-row-reverse text-light">Nigga Author</h3>
+          <h3 className="h3 p-3 d-none d-md-flex flex-row-reverse text-light">{author}</h3>
           <div className="d-none d-md-flex">
             <div className="lorem-img w-100"></div>
           </div>
@@ -45,15 +48,10 @@ const Hero = (e) => {
             </div>
 
             <article className="col-md-8 h-100 d-flex flex-column justify-content-between">
-              <h2 className="h3 mt-3"> Title </h2>
+              <h2 className="h3 mt-3"> {title} </h2>
               <main className="col position-relative overflow-hidden">
                 <div className='para fs-5 text-serif mt-4'>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatum? Maiores odit illum, repellendus asperiores ducimus alias!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatum? Maiores odit illum, repellendus asperiores ducimus alias!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatum? Maiores odit illum, repellendus asperiores ducimus alias!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatum? Maiores odit illum, repellendus asperiores ducimus alias!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatum? Maiores odit illum, repellendus asperiores ducimus alias!</p>
-                  
+                  <CreateArrayNode lines={lines}/>
                   <div className="faded-text position-absolute end-0 start-0 bottom-0 w-100 h-50"></div>
                 </div>
               </main>
