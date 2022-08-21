@@ -9,9 +9,9 @@ const PoemCard = (props) => {
           <h5 className="card-title">{title}</h5>
           <div className="card-body mx-1 position-relative">
 
-            <p className="card-text text-20 para">
+            <div className="card-text text-20 para">
               <CreateArrayNode lines={lines} />
-            </p>
+            </div>
             <div className="faded-text w-100 h-50 position-absolute bottom-0"></div>
           </div>
           <div className="footer d-flex flex-column align-items-start">
