@@ -14,9 +14,11 @@ const base = 'https://poetrydb.org';
 
 function App() {
   // state to note the render
-  const [randomPoems, setRandomPoems] = useState({});
-  const [ isPending, setIsPending ] = useState(false);
-  
+  const [randomPoems, setRandomPoems] = useState([{title:'', lines:[], author:''}]);
+  const today = new Date().getDay();
+  const [ isToday, setIsToday ] = useState(today);
+
+  isToday !== today && setIsToday(new Date().getDay());
   
   useEffect(() => {
     axios.get(`${base}/random/1`)
@@ -25,7 +27,7 @@ function App() {
 
             setRandomPoems(data.data);
          }).catch((err) => alert(err))
-  }, [isPending])
+  }, [isToday])
 
   
 
