@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/poetlines/static/css/main.69c8d04e.css",
-    "main.js": "/poetlines/static/js/main.f2f999c3.js",
+    "main.js": "/poetlines/static/js/main.adda1d51.js",
     "static/media/bootstrap-icons.woff?": "/poetlines/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
     "static/media/bootstrap-icons.woff2?": "/poetlines/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
     "index.html": "/poetlines/index.html",
     "main.69c8d04e.css.map": "/poetlines/static/css/main.69c8d04e.css.map",
-    "main.f2f999c3.js.map": "/poetlines/static/js/main.f2f999c3.js.map"
+    "main.adda1d51.js.map": "/poetlines/static/js/main.adda1d51.js.map"
   },
   "entrypoints": [
     "static/css/main.69c8d04e.css",
-    "static/js/main.f2f999c3.js"
+    "static/js/main.adda1d51.js"
   ]
 }
