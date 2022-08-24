@@ -14,31 +14,52 @@ const base = 'https://poetrydb.org';
 
 function App() {
   // state to note the render
-  const [randomPoems, setRandomPoems] = useState([{title:'', lines:[], author:''}]);
-  const today = new Date().getDay();
-  const [ isToday, setIsToday ] = useState(today);
-
-  isToday !== today && setIsToday(new Date().getDay());
+  const [todaysPoem, setTodaysPoem] = useState([{title:'', lines:[], author:''}]);
+  const [poemList, setPoemList] = useState([{title:'', lines:[], author:''}]);
+  // const today = new Date().getDay(); // get the day index of today
   
   useEffect(() => {
-    axios.get(`${base}/random/1`)
-         .then((data) => {
-            if(data.status !== 200 ) throw new Error(`Error status: ${data.status}`);
+    let todaysList = JSON.parse(localStorage.getItem('pl_list'));
+    let todaysPoem = JSON.parse(localStorage.getItem('pl_poem'));
+    // let todayInd = JSON.parse(localStorage.getItem('pl_today'));
 
-            setRandomPoems(data.data);
-         }).catch((err) => alert(err))
-  }, [isToday])
+   
+    
+    if (!todaysList && !todaysPoem) { // if todays_list is undefined, fetch
+      axios.get(`${base}/random/5`)
+      .then((res) => {
+        if(res.status !== 200 ) throw new Error(`Error status: ${res.status}`);
+          todaysList = [...res.data] // copy the res data
+          todaysPoem = todaysList.splice((Math.floor(Math.random() * 4) + 1), 1); // remove one randome poem from the list
+          
+          // set localstorage
+          localStorage.setItem("pl_list", JSON.stringify(todaysList));
+          localStorage.setItem("pl_poem", JSON.stringify(todaysPoem));
+          // localStorage.setItem("pl_today", JSON.stringify(today));
+
+          console.log('Here I am niga')
+
+        }).catch((err) => alert(err))
+    }
+
+    if (todaysPoem && todaysList) {
+      console.log('Setting states')
+      setTodaysPoem(todaysPoem)
+      setPoemList(todaysList)
+  }
+  }, [])
 
   
-
+// 
   return (
     <div className="bg-light p-0">
       <section className="container-fluid bg-dark-light p-0">
         <Header />
-        <Hero  todayPoem={randomPoems}/>
+        <Hero  todayPoem={todaysPoem}/>
       </section>
 
-      <PoemList />
+      <PoemList poemList={poemList}/>
+
       <PoetList />
       
       <Footer />
