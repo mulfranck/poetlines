@@ -33,3 +33,8 @@
   display: flex;
   flex-direction: column;
 }
+
+.card-columns a {
+  color: var(--bs-body-color);
+  text-decoration: none;
+}

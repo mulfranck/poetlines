@@ -1,8 +1,11 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import MorePoems from "./components/MorePoems";
+import PoemDetail from "./components/PoemDetail";
 import PoemList from "./components/PoemList";
 import PoetList from "./components/PoetList";
 
@@ -55,13 +58,37 @@ function App() {
     <div className="bg-light p-0">
       <section className="container-fluid bg-dark-light p-0">
         <Header />
-        <Hero  todayPoem={todaysPoem}/>
       </section>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <div className="container-fluid bg-dark-light p-0">
+              <Hero  todayPoem={todaysPoem}/>
+            </div>
+            <PoemList poemList={poemList}/>
+            <PoetList />
+          </>
+        } />
+        <Route path="/poem/:title" element={ <PoemDetail baseUrl={base}/>} />
+        <Route path="/poem" element={ <MorePoems />} />
 
-      <PoemList poemList={poemList}/>
+        <Route path="/login" element={
+          <div>
+            <p className="fs-2 text-center container">
+              login
+            </p>
+          </div>
+        } />
 
-      <PoetList />
-      
+        <Route path="*" element={
+          <div className="container not-found d-flex justify-content-center align-items-center">
+            <div className="display-5 text-serif">
+              Pages Not Found
+            </div>
+          </div>
+
+        } />
+      </Routes>
       <Footer />
     </div>
   );

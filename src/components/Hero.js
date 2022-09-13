@@ -1,4 +1,4 @@
-import { CreateArrayNode } from '../utils/CreateArrayNode';
+import { CreatePoemLines } from '../utils/CreatePoemLines';
 import './Hero.css';
 
 const Hero = (props) => {
@@ -51,7 +51,7 @@ const Hero = (props) => {
               <h2 className="h3 mt-3"> {title} </h2>
               <main className="col position-relative overflow-hidden">
                 <div className='para fs-5 text-serif mt-4'>
-                  <CreateArrayNode lines={lines}/>
+                  <CreatePoemLines lines={lines}/>
                   <div className="faded-text position-absolute end-0 start-0 bottom-0 w-100 h-50"></div>
                 </div>
               </main>

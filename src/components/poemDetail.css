@@ -1,0 +1,6 @@
+a {
+  text-decoration: none;
+}
+.same-height a {
+  color: var(--bs-body-color);
+}

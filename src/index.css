@@ -14,7 +14,9 @@
 .nav-link, form button {
     font-family: var(--text-sans);
 }
-
+.not-found {
+    height: 60vh;
+}
 .text-20 {
     font-size: var(--ps);
     font-family: var(--text-serif);
@@ -25,3 +27,4 @@
 .text-serif { font-family: var(--text-serif); }
 .text-sans { font-family: var(--text-sans); }
 .text-medium { font-weight:300; }
+.bg-dark-100 { background-color: var(--greys-100);}

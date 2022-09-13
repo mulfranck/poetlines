@@ -1,7 +1,7 @@
 const Footer = props => {
 
   return (
-    <section className="text-bg-light container-fluid">
+    <section className="text-dark bg-dark-100 container-fluid">
       <footer className="">
         <div className="just-some-space py-4"></div>
         <section className="container">

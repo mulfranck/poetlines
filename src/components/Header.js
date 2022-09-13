@@ -1,3 +1,5 @@
+import { Link, NavLink } from "react-router-dom";
+
 const Header = () => {
     return (
         <header className="navbar navbar-expand-md navbar-dark bg-dark">
@@ -17,21 +19,21 @@ const Header = () => {
                     </form>
                     <ul className="navbar-nav py-2">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Forms
-                            </a>
+                            </span>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Action</a></li>
-                                <li><a className="dropdown-item" href="#">Another action</a></li>
+                                <li><Link className="dropdown-item" to="/action">Action</Link></li>
+                                <li><Link className="dropdown-item" to="/another">Another action</Link></li>
                                 <li><hr className="dropdown-divider" /></li>
-                                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                <li><Link className="dropdown-item" to="/something">Something else here</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#"> Log in </a>
+                            <NavLink className="nav-link" to="/login"> Log in </NavLink>
                         </li>
                     </ul>
                 </div>
