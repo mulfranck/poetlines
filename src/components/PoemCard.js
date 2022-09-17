@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { CreatePoemLines } from "../utils/CreatePoemLines";
 
 const PoemCard = (props) => {
@@ -6,7 +5,7 @@ const PoemCard = (props) => {
   const { title, lines, author } = (props.poem);
 
   return (
-    <Link to={`poem/${title}`} className="card bg-light shadow-sm border-light px-4 pt-4 pb-1 my-4">
+    <div className="card bg-light shadow-sm border-light px-4 pt-4 pb-1 my-4">
       <h5 className="card-title">{title}</h5>
       <div className="card-body mx-1 position-relative">
         <div className="card-text text-20 para">
@@ -17,7 +16,7 @@ const PoemCard = (props) => {
       <div className="footer d-flex flex-column align-items-start">
         <p className="author fw-bold opacity-75">{author}</p>
       </div>
-    </Link>
+    </div>
   );
 }
 

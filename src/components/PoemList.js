@@ -15,8 +15,11 @@ const PoemList = ({poemList : poems}) => {
             </p>
           </header>
           {poems.map((poem, ind) =>  {
-           return  <PoemCard key={ind} poem={poem} />
-          }
+           return  (
+            <Link to={`poem/${poem.title}`} key={ind}>
+              <PoemCard poem={poem} />
+            </Link>
+           )}
           )}
         </div>
     </div>

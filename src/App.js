@@ -40,16 +40,18 @@ function App() {
           localStorage.setItem("pl_poem", JSON.stringify(todaysPoem));
           // localStorage.setItem("pl_today", JSON.stringify(today));
 
-          console.log('Here I am niga')
-
+          console.log('Setting states')
+          setTodaysPoem(todaysPoem)
+          setPoemList(todaysList)
+          
         }).catch((err) => alert(err))
     }
-
+      
     if (todaysPoem && todaysList) {
-      console.log('Setting states')
+      console.log('niga state exits')
       setTodaysPoem(todaysPoem)
       setPoemList(todaysList)
-  }
+    }
   }, [])
 
   
