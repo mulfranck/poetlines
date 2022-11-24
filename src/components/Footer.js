@@ -69,7 +69,7 @@ const Footer = props => {
             <p>The beautify of Poem</p>
           </div>
           <div className="col text-end py-4">
-              <a className="link-light text-decoration-none text-sans" href="github.com/mulfranck/poetlines">GitHub <span className="bi bi-github fs-5 ms-2 text-light"></span></a>
+              <a className="link-light text-decoration-none text-sans" href="https://github.com/mulfranck/poetlines">GitHub <span className="bi bi-github fs-5 ms-2 text-light"></span></a>
           </div>
             </div>
           </section>
