@@ -19,12 +19,10 @@ function App() {
   // state to note the render
   const [todaysPoem, setTodaysPoem] = useState([{title:'', lines:[], author:''}]);
   const [poemList, setPoemList] = useState([{title:'', lines:[], author:''}]);
-  // const today = new Date().getDay(); // get the day index of today
   
   useEffect(() => {
     let todaysList = JSON.parse(localStorage.getItem('pl_list'));
     let todaysPoem = JSON.parse(localStorage.getItem('pl_poem'));
-    // let todayInd = JSON.parse(localStorage.getItem('pl_today'));
 
    
     
@@ -61,6 +59,7 @@ function App() {
       <section className="container-fluid bg-dark-light p-0">
         <Header />
       </section>
+
       <Routes>
         <Route path="/" element={
           <>
@@ -72,7 +71,7 @@ function App() {
           </>
         } />
         <Route path="/poem/:title" element={ <PoemDetail baseUrl={base}/>} />
-        <Route path="/poem" element={ <MorePoems />} />
+        <Route path="/poems" element={ <MorePoems />} />
 
         <Route path="/login" element={
           <div>
