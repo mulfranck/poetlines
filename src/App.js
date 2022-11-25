@@ -16,6 +16,8 @@ const base = 'https://poetrydb.org';
 
 
 function App() {
+  // How much poems to load on click
+  let nobaOfMorePoems = Math.floor(Math.random() * (51) + 50); // random nuba between 100 and 50
   // state to note the render
   const [todaysPoem, setTodaysPoem] = useState([{title:'', lines:[], author:''}]);
   const [poemList, setPoemList] = useState([{title:'', lines:[], author:''}]);
@@ -66,12 +68,12 @@ function App() {
             <div className="container-fluid bg-dark-light p-0">
               <Hero  todayPoem={todaysPoem}/>
             </div>
-            <PoemList poemList={poemList}/>
+            <PoemList poemList={poemList} nobaOfMore={nobaOfMorePoems} />
             <PoetList />
           </>
         } />
-        <Route path="/poem/:title" element={ <PoemDetail baseUrl={base}/>} />
-        <Route path="/poems" element={ <MorePoems />} />
+        <Route path="/poems/:title" element={ <PoemDetail baseUrl={base}/>} />
+        <Route path="/poems" element={ <MorePoems baseUrl={base}/>} />
 
         <Route path="/login" element={
           <div>
