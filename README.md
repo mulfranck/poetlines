@@ -7,6 +7,9 @@
 - [ ] - Make the **read more** btn load the poem.
 - [ ] - Don't use the local storage for the load poems
 - [ ] - Load more poems when click on **Noba of poems**
+- [ ] - Add pagination to the morePoems page
+- [ ] - Add filter for the morePoems page
+- [ ] - Three random feature poems on the morePoems page.
 
 
 ### Learnt

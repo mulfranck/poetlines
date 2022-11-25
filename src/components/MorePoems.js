@@ -1,7 +1,9 @@
 
 const MorePoems = () => {
   return (
-    <div></div>
+    <div>
+      <p>This is more Poems</p>
+    </div>
   )
 }
 
