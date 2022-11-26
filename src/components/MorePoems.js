@@ -13,7 +13,6 @@ const MorePoems = ({baseUrl}) => {
             if (resData.status !== 200 ) throw Error(resData.status);
             else {
               setTenPoems(resData.data);
-              console.log(resData.data)
             }
          })
          .catch(err => alert("Error of ", err))
